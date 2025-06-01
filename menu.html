@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Buen Sabor - Menú</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>🍽️ El Buen Sabor</h1>
+        <p>Menú del día - Buenos Aires, Argentina</p>
+    </header>
+
+    <nav>
+        <button onclick="mostrarSeccion('vegano')">Menú Vegano</button>
+        <button onclick="mostrarSeccion('vegetariano')">Menú Vegetariano</button>
+        <button onclick="mostrarSeccion('carnesRojas')">Carnes Rojas</button>
+        <button onclick="mostrarSeccion('carnesBlancas')">Carnes Blancas</button>
+        <button onclick="mostrarSeccion('bebidas')">Bebidas</button>
+        <button onclick="mostrarSeccion('postres')">Postres</button>
+        <a href="index.html">INICIO</a>
+    </nav>
+
+    <main>
+        <section id="vegano" class="seccion">
+            <h2>🌿 Menú Vegano</h2>
+            <div class="tarjetas">
+                <div class="tarjeta-plato">
+                    <img src="img/lentejas.jpg" alt="Hamburguesa de lentejas">
+                    <h3>Hamburguesa de lentejas con papas</h3>
+                    <p>$2.500</p>
+                </div>
+                <div class="tarjeta-plato">
+                    <img src="img/tacos.jpg" alt="Tacos de soja texturizada">
+                    <h3>Tacos de soja texturizada con guacamole</h3>
+                    <p>$3.200</p>
+                </div>
+                <div class="tarjeta-plato">
+                    <img src="img/ensalada.jpg" alt="Ensalada fresca">
+                    <h3>Ensalada fresca con quinoa y garbanzos</h3>
+                    <p>$2.200</p>
+                </div>
+                <div class="tarjeta-plato">
+                    <img src="img/tofu.jpg" alt="Wok de tofu">
+                    <h3>Wok de tofu, verduras y salsa de soja sobre arroz integra</h3>
+                    <p>$2.700</p>
+                </div>
+                <div class="tarjeta-plato">
+                    <img src="img/curry.jpg" alt="Curry de garbanzos">
+                    <h3>Curry de garbanzos con leche de coco y arroz basmati</h3>
+                    <p>$2.800</p>
+                </div>
+            </div>
+        </section>
+
+<!-- Menú Vegetariano -->
+<section id="vegetariano" class="seccion oculto">
+    <h2>🥗 Menú Vegetariano</h2>
+    <div class="tarjetas">
+        <div class="tarjeta-plato">
+            <img src="img/pizza.jpg" alt="Pizza margarita">
+            <h3>Pizza Margarita</h3>
+            <p>$3.000</p>
+        </div>
+        <div class="tarjeta-plato">
+            <img src="img/omelette.jpg" alt="Omelette de queso">
+            <h3>Omelette de queso y espinaca</h3>
+            <p>$2.800</p>
+        </div>
+        <div class="tarjeta-plato">
+            <img src="img/pastas.jpg" alt="Pastas con salsa blanca">
+            <h3>Fideos con salsa blanca y champiñones</h3>
+            <p>$3.100</p>
+        </div>
+        <div class="tarjeta-plato">
+            <img src="img/ñoquis.jpg" alt="Ñoquis de papa">
+            <h3>Ñoquis de papa con salsa de tomate casera y albahaca </h3>
+            <p>$4.800</p>
+        </div>
+        <div class="tarjeta-plato">
+            <img src="img/tarta.jpg" alt="Tarta de zapallitos">
+            <h3>Tarta de zapallitos y queso</h3>
+            <p>$3.000</p>
+        </div>
+    </div>
+</section>
+
+<!-- Carnes Rojas -->
+<section id="carnesRojas" class="seccion oculto">
+    <h2>🥩 Carnes Rojas</h2>
+    <div class="tarjetas">
+        <div class="tarjeta-plato">
+            <img src="img/asado.jpg" alt="Asado criollo">
+            <h3>Asado criollo con papas</h3>
+            <p>$4.500</p>
+        </div>
+        <div class="tarjeta-plato">
+            <img src="img/milanesa.jpg" alt="Milanesa napolitana">
+            <h3>Milanesa napolitana con puré</h3>
+            <p>$3.800</p>
+        </div>
+        <div class="tarjeta-plato">
+            <img src="img/lomo.jpg" alt="Lomo al champiñón">
+            <h3>Lomo al champiñón con papas rústicas</h3>
+            <p>$4.200</p>
+        </div>
+        <div class="tarjeta-plato">
+            <img src="img/bife.jpg" alt="Bife de chorizo">
+            <h3>Bife de chorizo con papas rústicas y chimichurri criollo</h3>
+            <p>$4.500</p>
+        </div>
+        <div class="tarjeta-plato">
+            <img src="img/plato.jpg" alt="Estofado de ternera">
+            <h3>Estofado de ternera al vino tinto con vegetales asados</h3>
+            <p>$4.800</p>
+        </div>
+    </div>
+</section>
+
+<!-- Carnes Blancas -->
+<section id="carnesBlancas" class="seccion oculto">
+    <h2>🍗 Carnes Blancas</h2>
+    <div class="tarjetas">
+        <div class="tarjeta-plato">
+            <img src="img/pollo.jpg" alt="Pollo al horno">
+            <h3>Pollo al horno con batatas</h3>
+            <p>$3.600</p>
+        </div>
+        <div class="tarjeta-plato">
+            <img src="img/suprema.jpg" alt="Suprema a la Maryland">
+            <h3>Suprema a la Maryland</h3>
+            <p>$4.000</p>
+        </div>
+        <div class="tarjeta-plato">
+            <img src="img/pescado.jpg" alt="Filet de merluza">
+            <h3>Filet de merluza con arroz</h3>
+            <p>$3.300</p>
+        </div>
+        <div class="tarjeta-plato">
+            <img src="img/pechuga.jpg" alt="Pechuga grillada">
+            <h3>Pechuga grillada con ensalada</h3>
+            <p>$3.800</p>
+        </div>
+        <div class="tarjeta-plato">
+            <img src="img/salmon.jpg" alt="Salmón a la plancha">
+            <h3>Salmón a la plancha con vegetales al vapor y quinoa</h3>
+            <p>$4.500</p>
+        </div>
+    </div>
+</section>
+
+<!-- Bebidas -->
+<section id="bebidas" class="seccion oculto">
+    <h2>🥤 Bebidas</h2>
+    <div class="tarjetas">
+        <div class="tarjeta-plato">
+            <img src="img/gaseosa.jpg" alt="Gaseosa">
+            <h3>Gaseosa -500ml</h3>
+            <p>$1250</p>
+        </div>
+        <div class="tarjeta-plato">
+            <img src="img/jugo.jpg" alt="Jugo natural">
+            <h3>Jugo natural de naranja -1L</h3>
+            <p>$2.300</p>
+        </div>
+        <div class="tarjeta-plato">
+            <img src="img/agua.jpg" alt="Agua mineral">
+            <h3>Agua mineral sin gas -500ml</h3>
+            <p>$1250</p>
+        </div>
+    </div>
+</section>
+
+<!-- Postres -->
+<section id="postres" class="seccion oculto">
+    <h2>🍮 Postres</h2>
+    <div class="tarjetas">
+        <div class="tarjeta-plato">
+            <img src="img/flan.jpg" alt="Flan casero">
+            <h3>Flan casero con dulce de leche</h3>
+            <p>$1.500</p>
+        </div>
+        <div class="tarjeta-plato">
+            <img src="img/helado.jpg" alt="Helado artesanal">
+            <h3>Helado artesanal (2 bochas)</h3>
+            <p>$1.800</p>
+        </div>
+        <div class="tarjeta-plato">
+            <img src="img/tiramisu.jpg" alt="Tiramisú">
+            <h3>Tiramisú</h3>
+            <p>$2.000</p>
+        </div>
+    </div>
+</section>
+
+        <!-- Repetí lo mismo para carnesRojas, carnesBlancas, bebidas y postres -->
+    </main>
+
+    <footer>
+        <p>&copy; 2025 El Buen Sabor - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
